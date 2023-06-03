@@ -1,0 +1,344 @@
+* {
+    padding: 8px;
+    margin: 8px;
+    box-sizing: border-box; 
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+.contenedor-header {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo-titulo {
+    display: flex;
+}
+
+.logo-titulo img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo-titulo h4 {
+    color: white;
+    font-family: "Questrial";
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 23px;
+}
+
+.icon-menu {
+    position: absolute;
+    right: 1px;
+    top: 14px;
+    color: white;
+    font-size: 28px;
+}
+
+#logoinsta {
+    width: 30px;
+    height: 30px;
+    margin-top: 16px;
+    margin-right: 1px;
+}
+
+#logotw {
+    margin-top: 11px;
+    margin-left: 1px;
+}
+/* Portada */
+
+.container-portada {
+    width: 100%;
+    height: 400px;
+    background-image: url(img/fondoportada.jpg);
+    background-size: 115%;
+    animation: movimiento 10s infinite linear alternate;
+    position: relative;
+}
+
+@keyframes movimiento {
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.capa-degradada {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, rgb(73, 45, 0));
+    opacity: 0.5;
+}
+
+.container-details {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    left: 10px;
+}
+
+.details {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 20px;
+    color: white;
+}
+
+.details h1 {
+    font-family: "Questrial";
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.details p {
+    font-family: "Montserrat";
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.details button {
+    padding: 10px 20px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+}
+
+.details button:hover {
+    background: white;
+    color: black;
+}
+
+.buscar {
+    position: absolute;
+    padding: 5px;
+    margin-left: 320px;
+    margin-top: 6px;
+}
+
+.buscar input{
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-family: "Questrial";
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: sienna;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
+}
+/* Articulo */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+}
+
+article {
+    width: 100%;
+    max-width: 75%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+article h1 {
+    font-family: "Questrial";
+    font-size: 40px;
+    font-weight: 100;
+}
+
+article hr {
+    max-width: 500px;
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, black, sienna);
+    margin-top: 10px;
+}
+
+article p {
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/* Productos */
+
+.preproductos h1{
+    font-family: "Questrial";
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.preproductos hr {
+    max-width: 500px;
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, black, sienna);
+    margin-top: 10px;
+}
+
+.contenido {
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.mostrador {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.mostrador .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+
+.mostrador .fila .item {
+    max-width: 210px;
+    padding: 30px;
+    height: 320px;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.mostrador .fila .item:hover {
+    background-color: #e6e6e6;
+}
+
+.mostrador .fila .item img {
+    width: 100%;
+    margin: 0 0 px;
+}
+
+.mostrador .fila .item .descripcion {
+    font-family: "Montserrat";
+    color: #707070;
+    font-weight: bold;
+}
+
+.mostrador .fila .item .precio {
+    color: sienna;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Unirse */
+
+.unite p {
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.unite b {
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.unite .links:link {
+    color: black;
+}
+
+.unite .links:visited {
+    color: peru;
+}
+
+.unite .links:hover {
+    color: sienna;
+}
+
+.unite .links:active {
+    color: grey;
+}
+
+.unite hr {
+    max-width: 500px;
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, black, sienna);
+    margin-top: 10px;
+    margin-left: 0; 
+}
+   
+.lk hr {
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, black, sienna);
+    margin-top: 10px;
+}
+
+/* Footer */
+.futer {
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+.futer button {
+    padding: 10px 20px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid black;
+    color: black;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+}
+
+.futer button:hover {
+    background: black;
+    color: white;
+}
